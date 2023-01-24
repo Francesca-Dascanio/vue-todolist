@@ -20,11 +20,13 @@
            <main>
                 <div class="main-top">
                     <div class="input-container centered">
-                        <!-- @keyup.enter="addToDo()" è' scorretto perchè 2 eventi sono collegati da funzione? -->
-                        <input type="text" placeholder="Nuova task" size="50" v-model="inputUser">
-                        <button @click="addToDo()">
-                            Aggiungi
-                        </button>
+                        <!-- Così c'è un errore: se inserisco un todo e clicco bottone, e poi inserisco un altro todo e clicco enter entrambi i todo saranno uguali all'ultimo todo -->
+                        <form action="" @submit.prevent="'onSubmit'">
+                            <input type="text" placeholder="Nuova task" size="50" v-model="inputUser" @keyup.enter="addToDo()">
+                            <button type="submit" @click="addToDo()">
+                                Aggiungi
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <div class="main-bottom">
