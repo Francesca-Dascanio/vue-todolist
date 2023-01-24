@@ -27,7 +27,8 @@ createApp ({
             newToDo: {
                 text: '',
                 done: false
-            }
+            },
+            message: 'Complimenti! Non hai più cose da fare'
         }
     },
     methods: {
@@ -38,7 +39,6 @@ createApp ({
         },
         addToDo () {
 
-
             if (this.inputUser != '') {
                 this.newToDo.text = this.inputUser;
                 this.todos.push(this.newToDo);
@@ -47,13 +47,10 @@ createApp ({
                 this.inputUser = '';
             }
             else {
-                // altrimenti non fare niente
+                // Non fare niente
             }
-            
-
-            
-
         },
+
     }
 }
 ).mount('#app')
