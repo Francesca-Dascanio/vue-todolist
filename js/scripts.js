@@ -5,7 +5,7 @@ createApp ({
     data () {
 
         return {
-            message: 'check Vue'
+            
         }
     },
     methods: {

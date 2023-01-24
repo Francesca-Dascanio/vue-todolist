@@ -4,3 +4,46 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* REGOLE HEADER */
+header .img-container {
+    width: 20%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header .img-container img {
+    width: 100%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.main-top input , .main-top button {
+    padding: 0.5rem;
+    margin: 1rem 0.2rem 1rem 0.2rem;
+}
+
+.main-bottom .items-container {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 50px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.main-bottom .items-container .item span {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.main-bottom .items-container .item .text {
+    width: 95%;
+}
+
+.main-bottom .items-container .item .delete {
+    width: 5%;
+    text-align: right;
+}
