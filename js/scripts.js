@@ -24,6 +24,10 @@ createApp ({
                 }
             ],
             inputUser: '',
+            newToDo: {
+                text: '',
+                done: false
+            }
         }
     },
     methods: {
@@ -31,7 +35,25 @@ createApp ({
 
             this.todos.splice(index, 1);
             console.log(this.todos);
-        }
+        },
+        addToDo () {
+
+
+            if (this.inputUser != '') {
+                this.newToDo.text = this.inputUser;
+                this.todos.push(this.newToDo);
+                console.log(this.todos);
+
+                this.inputUser = '';
+            }
+            else {
+                // altrimenti non fare niente
+            }
+            
+
+            
+
+        },
     }
 }
 ).mount('#app')

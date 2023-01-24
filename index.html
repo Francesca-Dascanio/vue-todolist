@@ -20,8 +20,8 @@
            <main>
                 <div class="main-top">
                     <div class="input-container centered">
-                        <input type="text" placeholder="Nuova task" size="50">
-                        <button>
+                        <input type="text" placeholder="Nuova task" size="50" v-model="inputUser">
+                        <button @click="addToDo()">
                             Aggiungi
                         </button>
                     </div>
