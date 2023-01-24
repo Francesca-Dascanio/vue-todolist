@@ -27,7 +27,11 @@ createApp ({
         }
     },
     methods: {
+        deleteToDo: function (index) {
 
+            this.todos.splice(index, 1);
+            console.log(this.todos);
+        }
     }
 }
 ).mount('#app')

@@ -32,7 +32,7 @@
                             <span class="text" @mouseenter="todo.done = true" :class="todo.done == true ? 'line-through' : ''" @mouseleave="todo.done = false">
                                 {{ todo.text }}
                             </span>
-                            <span class="delete">
+                            <span class="delete" @click="deleteToDo(index)">
                                 X
                             </span>
                             <hr>

@@ -10,10 +10,10 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 
 MILESTONE 1
 Stampare all'interno di una lista HTML un item per ogni to-do. OK
-Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
+Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato. OK
 
 MILESTONE 2
-Visualizzare a fianco di ogni item una "x": cliccando su di essa, il todo viene rimosso dalla lista.
+Visualizzare a fianco di ogni item una "x": cliccando su di essa, il todo viene rimosso dalla lista. OK
 
 MILESTONE 3
 Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
