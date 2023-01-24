@@ -9,7 +9,7 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 
 
 MILESTONE 1
-Stampare all'interno di una lista HTML un item per ogni todo.
+Stampare all'interno di una lista HTML un item per ogni to-do. OK
 Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 
 MILESTONE 2

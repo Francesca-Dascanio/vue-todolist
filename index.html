@@ -28,9 +28,9 @@
                 </div>
                 <div class="main-bottom">
                     <div class="items-container">
-                        <div class="item">
-                            <span class="text">
-                                testo
+                        <div class="item" v-for="(todo, index) in todos" >
+                            <span class="text" @mouseenter="todo.done = true" :class="todo.done == true ? 'line-through' : ''" @mouseleave="todo.done = false">
+                                {{ todo.text }}
                             </span>
                             <span class="delete">
                                 X
@@ -42,6 +42,7 @@
            </main>
         </div>
         
+
 
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
