@@ -21,12 +21,13 @@
                 <div class="main-top">
                     <div class="input-container centered">
                         <!-- Così c'è un errore: se inserisco un todo e clicco bottone, e poi inserisco un altro todo e clicco enter entrambi i todo saranno uguali all'ultimo todo -->
-                        <form action="" @submit.prevent="'onSubmit'">
-                            <input type="text" placeholder="Nuova task" size="50" v-model="inputUser" @keyup.enter="addToDo()">
-                            <button type="submit" @click="addToDo()">
+                        <form action="" @submit.prevent="addToDo()">
+                            <input type="text" placeholder="Nuova task" size="50" v-model="inputUser">
+                            <button>
                                 Aggiungi
                             </button>
                         </form>
+                        <!-- @keyup.enter="addToDo()" non serve se ho form -->
                     </div>
                 </div>
                 <div class="main-bottom">
